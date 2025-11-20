@@ -35,10 +35,7 @@
       body {
         background: white !important;
         margin: 0 !important;
-        padding-top: 2.5cm !important;
-        padding-left: 2.5cm !important;
-        padding-right: 2.5cm !important;
-        padding-bottom: 2cm !important;
+        padding: 0 !important;
         font-size: 12px;
         -webkit-print-color-adjust: exact;
       }
@@ -46,8 +43,8 @@
       .print-section {
         page-break-inside: avoid;
         box-shadow: none !important;
-        padding: 0 !important;
         margin-bottom: 10px !important;
+        /* Removed padding: 0 !important to allow container padding */
       }
 
       #app {
@@ -60,7 +57,11 @@
       #viewForm {
         box-shadow: none !important;
         border: none !important;
-        padding: 0 !important;
+        padding-top: 2.5cm !important;
+        padding-left: 2.5cm !important;
+        padding-right: 2.5cm !important;
+        padding-bottom: 2cm !important;
+        width: 100% !important;
       }
 
       /* Compact spacing for print */
