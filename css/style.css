@@ -24,10 +24,7 @@
 
     @media print {
       @page {
-        margin-top: 2.5cm;
-        margin-left: 2.5cm;
-        margin-right: 2.5cm;
-        margin-bottom: 2cm;
+        margin: 0;
         size: A4;
       }
 
@@ -37,9 +34,13 @@
 
       body {
         background: white !important;
-        margin: 0;
-        padding: 0;
+        margin: 0 !important;
+        padding-top: 2.5cm !important;
+        padding-left: 2.5cm !important;
+        padding-right: 2.5cm !important;
+        padding-bottom: 2cm !important;
         font-size: 12px;
+        -webkit-print-color-adjust: exact;
       }
 
       .print-section {
